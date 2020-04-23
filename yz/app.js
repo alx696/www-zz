@@ -176,7 +176,7 @@ const $vtt = {
 };
 
 const app = {
-  transactionApi: 'https://translation.googleapis.com/language/translate/v2?key=AIzaSyCeuI5BuDtTRM8fzgll0PlNIl0ymN_1yds&source=en&target=zh&q=',
+  transactionApi: 'https://translation.googleapis.com/language/translate/v2?key=AIzaSyCovLq_cQBVb3kiBr4fMI9heA4vjtwaJAw&source=en&target=zh&q=',
   video: null,
   track: null,
   cueMap: new Map(),
