@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="字幕,自由,共享,计划">
+  <meta name="description" content="让每个人都能翻译制作字幕，让所有人都能自由共享字幕！">
+  <title>《字幕自由共享计划》</title>
+  <style>
+    body {
+      font-family: "Noto Serif CJK SC", "Noto Sans CJK SC";
+    }
+
+    @media (min-width: 960px) {
+      body {
+        margin: 0 auto;
+        width: 960px;
+      }
+    }
+
+    h1, h2 {
+      margin: 0;
+      padding: 1rem;
+    }
+
+    header {
+      background-color: black;
+      color: gold;
+      text-align: center;
+    }
+
+    article {
+      line-height: 180%;
+    }
+
+    ul {
+      padding: 0;
+      font-family: "Noto Sans Mono CJK SC";
+    }
+
+    a {
+      color: teal;
+    }
+
+    code {
+      background-color: teal;
+      color: white;
+      word-break: break-word;
+    }
+  </style>
+  <script>
+    //跳转TLS
+    if (location.protocol !== 'https:') {
+      location.href = location.href.replace('http:', 'https:');
+    }
+
+    /**
+     * 选择并复制元素内容
+     */
+    const $sc = (e) => {
+      let range = document.createRange();
+      range.selectNodeContents(e);
+      let selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      document.execCommand('copy');
+    };
+  </script>
+</head>
+<body>
+<header>
+  <h1>《字幕自由共享计划》</h1>
+  <h2>让每个人都能翻译制作字幕，让所有人都能自由共享字幕！</h2>
+</header>
+<article>
+  <p>字幕自由共享计划希望通过技术创新，让每个人都能翻译制作字幕，让所有人都能自由共享字幕！甚至在外语不好的情况下，只要你足够的喜爱影视剧，你就能翻译制作字幕。译制的字幕分享后完全公开自由，甚至你自己都没法阻止它被分享！</p>
+  <p>字幕自由共享计划提供的译制工具不用下载安装，访问网址就能使用，手机也行。自由共享的环境和氛围需要每个人自觉的努力，译制好的字幕请上传到去中心化网络中，使用字幕时请保留作者署名！我们正在征召开发者、翻译者和爱好者！你可以访问<a href="https://github.com/alx696/zz" target="_blank">GitHub</a>参与开发，使用<a href="yz/" target="_blank">字幕译制工具</a>参与测试反馈。
+  </p>
+</article>
+</body>
+</html>

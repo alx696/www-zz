@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=0.86">
+  <title>字幕译制工具</title>
+  <link rel="stylesheet" href="app.css">
+  <script src="uuid.js"></script>
+  <script src="app.js"></script>
+  <script>
+    //跳转TLS
+    if (location.protocol !== 'https:') {
+      location.href = location.href.replace('http:', 'https:');
+    }
+  </script>
+</head>
+<body>
+<div id="preview">
+  <video id="video"></video>
+</div>
+<div id="control">
+  <span id="vttTimeStart">00:00:00.000</span>
+  <span id="videoCurrentTime">00:00:00.000</span>
+  <span id="vttTimeEnd">00:00:00.000</span>
+  <button id="vttAdd" disabled>添加</button>
+  <button id="videoTimeLeft" disabled>往左</button>
+  <input id="videoTimeRange" type="range" value="0" step="0.1" disabled>
+  <button id="videoTimeRight" disabled>往右</button>
+  <button id="videoPlay" disabled>播放</button>
+  <button id="vttTimeStartReset" data-ui="vttEditButton" disabled>重设</button>
+  <button id="vttTimeStartTo" data-ui="vttEditButton" disabled>出现</button>
+  <button id="vttDelete" data-ui="vttEditButton" disabled>删除</button>
+  <button id="vttPlay" data-ui="vttEditButton" disabled>试播</button>
+  <button id="vttTimeEndTo" data-ui="vttEditButton" disabled>消失</button>
+  <button id="vttTimeEndReset" data-ui="vttEditButton" disabled>重设</button>
+</div>
+<div id="list"></div>
+<div id="toolbar">
+  <button id="openVideo">打开视频</button>
+  <button id="openVtt" disabled>打开字幕</button>
+  <button id="openRefer" disabled>打开参考</button>
+  <button id="saveVtt" disabled>保存字幕</button>
+  <a href="https://github.com/alx696/zz/issues/new" target="_blank">反馈问题</a>
+</div>
+</body>
+</html>
